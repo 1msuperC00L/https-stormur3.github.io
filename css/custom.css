@@ -1,0 +1,36 @@
+h1,
+.col-31 aside h3 {
+    color: var(--pico-primary);
+}*/
+.col-31 {
+    display: grid !important;
+    grid-template-columns: 1fr;
+}
+
+.author {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    background-color: #ff9500;
+}
+
+@media screen and (min-width:768px) {
+    .aukabil_3rem {
+        grid-column-gap: 3rem;
+    }
+}
+
+@media screen and (min-width:960px) {
+    .col-31 {
+        grid-template-columns: 3fr 1fr;
+        column-gap: 2rem;
+    }
+    .col-31 aside {
+        padding-top: 1rem;
+    }
+}

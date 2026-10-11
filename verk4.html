@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/pico.pumpkin.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/table_form.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/menues.css">
+    <title>Hello world!</title>
+  </head>
+  <body>
+    <nav>
+    <ul>
+        <li><strong>
+          <a href="index.html">Öraferðir</a></strong></li>
+    </ul>
+    <ul>
+        <li><a href="verk2.html">Verk 2</a></li>
+        <li><a href="verk3.html">Verk 3</a></li>
+        <li><a href="verk4.html">Verk 4</a></li>
+        <li><a href="verk5.html">Verk 5</a></li>
+        <li><a href="#">Innskráning</a></li>
+        <li>
+          <form action="https:www.notebook.google.com" post="get">
+            <input type="search"
+              name="search"
+              placeholder="Leit"
+              aria-label="Search"/>
+          </form>
+        </li>
+    </ul>
+    </nav>
+    <picture>
+      <source media="(min-width:1200px)" srcset="images/people-by-lake.webp">
+      <source media="(min-width:600px)" srcset="images/people-by-lake-1200.webp">
+      <source media="(min-width:100px)" srcset="images/people-by-lake-600.webp">
+      <img src="images/people-by-lake-1200.webp">
+    </picture>
+    <main class="container">
+      <h1>Hello world!</h1>
+      <div class="col-31">
+        <article class="grid">
+          <section>
+              <h3>Grein 1</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed blanditiis dolore sunt quis vitae odio facilis iure deleniti repellat asperiores recusandae ea hic dolorem, quas enim totam odit amet nulla.</p>
+              <button href="https:www.tskoli.is">Skoða nánar</button>
+          </section>
+          <section>
+              <h3>Grein 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque excepturi aliquid ab suscipit voluptatem repudiandae dolores soluta odit, deserunt dolor necessitatibus illo rerum recusandae quo in deleniti aspernatur, a culpa.</p>
+              <a href="https:www.tskoli.is" role="button" class="outline">Skoða nánar</a>
+          </section>
+          <section>
+            <h3>Grein 3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam minus tenetur exercitationem molestiae corrupti, saepe odit soluta similique, quis numquam unde fugit maxime, voluptatem error voluptate quas. Aut, reprehenderit pariatur?</p>
+          </section>
+        </article>
+        <aside>
+          <h3>test</h3>
+          <p>insert dummy text here</p>
+        </aside>
+      </div>
+        <hr>
+        <div class="grid">
+          <section>
+            <h2>Tables</h2>
+            <div class="overflow-auto">
+              <table class="striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Heading</th>
+                    <th scope="col">Heading</th>
+                    <th scope="col">Heading</th>
+                    <th scope="col">Heading</th>
+                    <th scope="col">Heading</th>
+                    <th scope="col">Heading</th>
+                    <th scope="col">Heading</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <!--form hér-->
+          <section></section>
+        </div>
+        <fieldset>
+          <div class="grid">
+            <section>
+              <input type="text" name="text" placeholder="Text" aria-label="Text">
+              <input type="email" name="email" placeholder="Email" aria-label="Email" autocomplete="email">
+              <input type="number" name="number" placeholder="Number" aria-label="Number">
+              <input type="password" name="password" placeholder="Password" aria-label="Password">
+              <input type="tel" name="tel" placeholder="Tel" aria-label="Tel" autocomplete="tel">
+              <input type="url" name="url" placeholder="Url" aria-label="Url">
+            </section>
+            <section>
+              <select name="favorite-cuisine" aria-label="Select your favorite cuisine..." required>
+                <option selected disabled value="">
+                  Select your favorite cuisine...
+                </option>
+                <option>Italian</option>
+                <option>Japanese</option>
+                <option>Indian</option>
+                <option>Thai</option>
+                <option>French</option>
+              </select>
+            </section>
+          </div>
+        </fieldset>
+        <form>
+          <fieldset>
+            <legend>Innskráning</legend>
+            <label>
+              Fornafn
+              <input
+                name="first_name"
+                placeholder="First name"
+                autocomplete="given-name"
+              />
+            </label>
+            <label>
+              Tölvupóstur
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                autocomplete="email"
+                required
+              />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Language preferences:</legend>
+            <label>
+              <input type="checkbox" name="english" checked />
+              English
+            </label>
+            <label>
+              <input type="checkbox" name="french" checked />
+              French
+            </label>
+            <label>
+              <input type="checkbox" name="mandarin" />
+              Mandarin
+            </label>
+            <label>
+              <input type="checkbox" name="thai" />
+              Thai
+            </label>
+            <label aria-disabled="true">
+              <input type="checkbox" name="dothraki" disabled />
+              Dothraki
+            </label>
+          </fieldset>
+          <input type="submit" value="Subscribe"/>
+          <fieldset>
+            <legend>Language preference:</legend>
+            <label>
+              <input type="radio" name="language" checked />
+              English
+            </label>
+            <label>
+              <input type="radio" name="language" />
+              French
+            </label>
+            <label>
+              <input type="radio" name="language" />
+              Mandarin
+            </label>
+            <label>
+              <input type="radio" name="language" />
+              Thai
+            </label>
+            <label aria-disabled="true">
+              <input type="radio" name="language" disabled />
+              Dothraki
+            </label>
+          </fieldset>
+        </form>
+    </main>
+    <footer class="center">
+      <hr>
+      &copy; SLHS, VEFÞ2VH0BU, Tölvubraut, Upplýsingatækniskólinn
+    </footer>
+    <!--Modal button-->
+    <section id="modal">
+        <h2>Modal</h2>
+        <button class="contrast" data-target="modal-example" onclick="toggleModal(event)">
+          Launch demo modal
+        </button>
+      </section>
+      <!--Modal example-->
+      <dialog id="modal-example" method="post">
+      <article>
+        <header>
+          <button
+            aria-label="Close"
+            rel="prev"
+            data-target="modal-example"
+            onclick="toggleModal(event)"
+          ></button>
+          <h3>Confirm your action!</h3>
+        </header>
+        <p>
+          Cras sit amet maximus risus. Pellentesque sodales odio sit amet augue finibus
+          pellentesque. Nullam finibus risus non semper euismod.
+        </p>
+        <footer>
+          <button
+            role="button"
+            class="secondary"
+            data-target="modal-example"
+            onclick="toggleModal(event)"
+          >
+            Cancel</button
+          ><button autofocus data-target="modal-example" onclick="toggleModal(event)">
+            Confirm
+          </button>
+        </footer>
+      </article>
+    </dialog>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
